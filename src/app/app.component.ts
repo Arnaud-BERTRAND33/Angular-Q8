@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Q8-Angular';
+
+  constructor() {}
+
+  onomatopiaList: string[] = [];
+
+  onReceiveNewOnomatopia(event: string): void{
+    this.onomatopiaList.push(event);
+  }
 }
